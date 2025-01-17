@@ -1,5 +1,6 @@
 # Ignore virtual environment folder
 .venv/
+media
 
 # Ignore SQLite database file
 db.sqlite3
