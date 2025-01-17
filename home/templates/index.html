@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>My shop</title>
+</head>
+<body>
+  <h1>Hello everybody! It's <b>Starts</b> online shop</h1>
+  {% for category in categories%}
+    <h3>
+        <a href="{% url 'products_list' pk=category.pk %}">{{ category.name }}</a>
+    </h3>
+  
+  {%endfor%}
+
+  
+</body>
+</html>

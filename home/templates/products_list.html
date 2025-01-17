@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Products List</title>
+</head>
+<body>
+  <h1>Products in {{ category.name }}</h1>
+  {% for product in products %}
+    <h3>{{ product.name }}</h3>
+    {% if product.image %}
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width: 300px; height: auto;">
+    {% else %}
+        <p>No image available</p>
+    {% endif %}
+    <p>{{ product.description }}</p>
+    <p>Price: {{ product.price }} sum</p>
+    <button>Sotib olish</button>
+  {% endfor %}
+
+  
+</body>
+</html>
